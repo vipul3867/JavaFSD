@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>functional Prtotype</h2>
+    <script>
+        //function constructor
+        function Employee(name,designation,yearOfBirth)
+        {
+            this.name=name;
+            this.designation=designation;
+            this.yearOfBirth=yearOfBirth;
+        }
+        //employee prototype
+        Employee.prototype.calculateAge= function(){
+            console.log("The current age is "+(2022-this.yearOfBirth))
+        }
+        //instance of function constructor using new key word
+        let emp1= new Employee("Alex","Tester",1996);
+        console.log(emp1);
+        emp1.calculateAge();
+        let emp2= new Employee("John","Web Developer",1991);
+        console.log(emp2);
+        emp2.calculateAge();
+    </script>
+</body>
+</html>
