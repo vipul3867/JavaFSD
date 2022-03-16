@@ -1,0 +1,90 @@
+
+<app-header></app-header>
+
+<section class="home" id="home">
+  <div class="content">
+    <h1 class="heading">
+      Welcome to the Kitchen Story!
+    </h1>
+    <h3>Order your favorite Food here! 
+        <a class="ordernow" [routerLink]="['/Fooditems']" role="button" style="text-decoration: none; color: gold; font-weight: bo; ">
+            Order Now
+        </a>
+    </h3>
+</div>
+</section>
+
+
+
+
+
+<section class="popular" id="popular">
+    <div>
+        <h1 class="heading"> Most <span>Popular</span> Foods </h1>
+    </div>
+
+
+  <div class="box-container">
+
+      <div class="box">
+          
+          <img src="assets/ChickenBiryani.jpg" alt="">
+          <h3>Biriyani, <span class="price"> 150₹ - 350₹  </span></h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          
+          <a class="btn btn-outline-primary" [routerLink]="['/Fooditems']" role="button">Order now</a>
+
+      </div>
+      <div class="box">
+          
+          <img src="assets/cake.jpg" alt="">
+          <h3>Cakes, <span class="price"> 50₹ - 850₹ </span></h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <a class="btn btn-outline-primary" [routerLink]="['/Fooditems']" role="button">Order now</a>
+      </div>
+      <div class="box">
+          
+          <img src="assets/p-5.jpg" alt="">
+          <h3>Cold Drinks, <span class="price"> 50₹ - 250₹</span></h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <a class="btn btn-outline-primary" [routerLink]="['/Fooditems']" role="button">Order now</a>
+      </div>
+      <div class="box">
+          <img src="assets/p-6.jpg" alt="">
+          <h3>Ice Creams, <span class="price"> 50₹ - 250₹ </span></h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <a class="btn btn-outline-primary" [routerLink]="['/Fooditems']" role="button">Order now</a>
+      </div>
+
+  </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>

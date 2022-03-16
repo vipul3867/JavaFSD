@@ -1,0 +1,17 @@
+In this Arithmetic Calculator Project, we have used different arithmetic Operations to perform calculations like 1 for Addition, 2 for Subtraction 3 for Multiplication, 4 for Division 
+
+The Role of different operators is given below:
+
+1. Addition (+): This is a binary operator and used to add two operands.
+Syntax: num1+num2.
+
+2. Subtraction (-): This is a binary operator and used to subtract two operands.
+Syntax: num1-num2.
+
+3. Multiplication (*): This is a binary operator and is used to multiply two operands.
+Syntax: num1*num2.
+
+4. Division (/): This is a binary operator and used to divide two operands and gives quotient as the result.
+Syntax: num1/num2.
+
+Thus we have seen the operations performing in Java IDE.

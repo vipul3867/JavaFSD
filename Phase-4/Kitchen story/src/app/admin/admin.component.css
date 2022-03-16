@@ -1,0 +1,39 @@
+.table-responsive{
+    text-align: center;
+    position: absolute;
+    border:2px solid black;
+    border-radius: 2px;
+    padding:4px 10px;
+    font-weight: 50;
+    font-size: 20px;
+    top:20%;
+    
+}
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.adminLogInForm{
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.adminLogInForm h2{
+    color: red;
+    font-size: 50px;
+}
+
+.adminLogInForm input{
+    width: 200px;
+}
+
+.editTable{
+    text-align: center;
+}
+
+.addItemForm{
+    text-align: center;
+}

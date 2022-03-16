@@ -1,0 +1,76 @@
+<app-header></app-header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<br />
+<br />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<ng-container
+  *ngIf="adminLoggedIn; then loginPage">
+</ng-container>
+<ng-container
+  *ngIf="adminPage; then adminPageShow">
+</ng-container>
+<ng-container
+  *ngIf="showAddItemForm; then addItemForm">
+</ng-container>
+
+
+<div>
+    <ng-template #loginPage>
+    <div class="adminLogInForm">
+        <h2>Admin Login Page</h2>
+        <form style="margin-top: 200px;">
+            Username : <input type="text" name="adminUserName" [(ngModel)]="adminUserName">
+            <br> <br>
+            Password : <input type="password" name="adminPassword" [(ngModel)]="adminPassword">
+            <br> <br>
+            <input type="submit" value="Login" class="btn btn-primary" (click)="adminLogin()" style="width: 80px;">
+        </form>
+    </div>
+    </ng-template>
+    
+    <ng-template #adminPageShow>
+        <div class="editTable">
+            <table class="table table-bordered table-responsive">
+                <thead>
+                    <tr class="bg-info">
+                        <th>FoodItem</th>
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mov of vtbl">
+                        <img [src]="mov.Img" [width]="imgWidth" [height]="imgHeight" [style.borderRadius.px]="imgRadius" />
+                        <td>{{mov.Name}}</td>
+                        <td>{{mov.Cost}}</td>
+                        <td><button (click)="onDelete(mov.Name)">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            
+            <button (click)="addItem()" style="color: red; font-size: 40px; margin: 100px;">Add Item</button>
+        </div>       
+    </ng-template>
+    <ng-template #addItemForm>
+        <div class="addItemForm">
+            <h2>Add Item Details</h2>
+            <form style="margin-top: 200px;">
+                Item Number : <input type="text" name="Item" [(ngModel)]="Item">
+                <br> <br>
+                Item Name : <input type="text" name="Name" [(ngModel)]="Name">
+                <br> <br>
+                Cost : <input type="text" name="Cost" [(ngModel)]="Cost">
+                <br> <br>
+                Rating : <input type="text" name="Rating" [(ngModel)]="Rating">
+                <br> <br>
+                Qnt : <input type="text" name="qnt" [(ngModel)]="qnt">
+                <br> <br>
+                Image URL : <input type="text" name="Img" [(ngModel)]="Img">
+                <br> <br>
+                <input type="submit" value="Add Item" class="btn btn-primary" (click)="adminItemToList()" style="width: 80px;">
+            </form>
+        </div>
+    </ng-template>
+</div>

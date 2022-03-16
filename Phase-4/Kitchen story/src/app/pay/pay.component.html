@@ -1,0 +1,28 @@
+<app-nheader></app-nheader>
+<br />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<div class="container">
+    <p>Please Enter your card Details for purchase</p>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">CardNumber</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter cardnumber" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Card holder Name</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">CVV</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="cvv" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Expiry Date</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="MM/YY" />
+        </div>
+        <button type="submit" class="btn btn-primary" [routerLink]="['/final']">Submit</button>
+    </form>
+</div>
+<br />
+
+<app-footer></app-footer>

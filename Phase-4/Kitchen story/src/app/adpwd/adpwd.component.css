@@ -1,0 +1,8 @@
+body
+{
+    /* background-image: url("../../assets/logo.jpg"); */
+    background-image: url('../../assets/login.jpg');
+}
+p{
+    font-style: verdana;
+}

@@ -1,0 +1,49 @@
+File handling in Java is defined as reading and writing data to a file. The particular file class from the package called java.io allows us to handle and work with different formats of files. There are several File Operations like creating a new File, writing into a File, reading from a File, append to the File and deleting a File.
+
+In File operations there are two methods Stream and Byte.
+
+Stream methods-A series of data is referred to as a stream.
+Stream is classified into two types, i.e., Byte Stream and Character Stream.
+
+Byte Stream: -
+Byte Stream is mainly involved with byte data. A file handling process with a byte stream is a process in which an input is provided and executed with the byte data. Byte Stream has two classes.
+-Input Stream
+-Output Stream
+
+Character Stream: -It is mainly involved with character data. A file handling process with a character stream is a process in which an input is provided and executed with the character data. Character stream has two classes.
+-Reader classes
+-Writer Classes
+
+We can perform the following operation on a file:
+
+Create a File
+Append to a File
+Write to a File
+Read from a File
+Delete a File
+
+1.Create a File operation is performed to create a new file. We use the createNewFile() method of file. The createNewFile() method returns true when it successfully creates a new file and returns false when the file already exists.
+
+2.Write a File: we can perform on a file is "writing into a file". In order to write data into a file, we will use the FileWriter class and its write() method together. We need to close the stream using the close() method to retrieve the allocated resources.
+
+3.Read from File: we can perform on a file is "read from a file". In order to write data into a file, we will use the Scanner class. Here, we need to close the stream using the close() method. We will create an instance of the Scanner class and use the hasNextLine() method nextLine() method to get data from the file.
+
+4.Delete from File: we can perform on a file is "deleting a file". In order to delete a file, we will use the delete() method of the file. We don't need to close the stream using the close() method because for deleting a file, we neither use the FileWriter class nor the Scanner class.
+
+Java Exceptions:
+When an error occurs, Java will normally stop and generate an error message. The technical term for this is: Java will throw an exception.
+
+Try and Catch: 
+
+The try statement allows you to define a block of code to be tested for errors while it is being executed.
+
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+The try and catch keywords come in pairs:
+Syntax:
+try {
+  //  Block of code to try
+}
+catch(Exception e) {
+  //  Block of code to handle errors
+}
